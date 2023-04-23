@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+
+<body>
+
+  <!-- First Row -->
+  <p>
+    <button onclick="
+      updateCalculator('1');
+    ">
+      1
+    </button>
+
+    <button onclick="
+      updateCalculator('2');
+    ">
+      2
+    </button>
+
+    <button onclick="
+      updateCalculator('3');
+    ">
+      3
+    </button>
+
+    <button onclick="
+      updateCalculator('+');
+    ">
+      +
+    </button>
+  </p>
+
+  <!-- Second Row -->
+  <p>
+    <button onclick="
+      updateCalculator('4');
+    ">
+      4
+    </button>
+
+    <button onclick="
+      updateCalculator('5');
+    ">
+      5
+    </button>
+
+    <button onclick="
+      updateCalculator('6');
+    ">
+      6
+    </button>
+
+    <button onclick="
+      updateCalculator('-');
+    ">
+      -
+    </button>
+  </p>
+
+  <!-- Third Row -->
+  <p>
+    <button onclick="
+      updateCalculator('7');
+    ">
+      7
+    </button>
+
+    <button onclick="
+      updateCalculator('8');
+    ">
+      8
+    </button>
+
+    <button onclick="
+      updateCalculator('9');
+    ">
+      9
+    </button>
+
+    <button onclick="
+      updateCalculator('*');
+    ">
+      *
+    </button>
+  </p>
+
+  <!-- Fourth Row -->
+  <p>
+    <button onclick="
+      updateCalculator('0');
+    ">
+      0
+    </button>
+
+    <button onclick="
+      updateCalculator('.');
+
+    ">
+      .
+    </button>
+
+    <button onclick="
+      updateCalculator('=');
+    ">
+      =
+    </button>
+
+    <button onclick="
+      updateCalculator('/');
+
+    ">
+      /
+    </button>
+  </p>
+
+  <!-- Fifth Row -->
+  <p>
+    <button onclick="
+      calculation = '';
+      console.log(calculation);
+    ">
+      Clear
+    </button>
+  </p>
+
+
+  <script>
+    let calculation = "";
+
+    function updateCalculator(input) {
+      calculation += input
+      console.log(calculation);
+    }
+  </script>
+
+</body>
+
+</html>
